@@ -7,8 +7,39 @@
 }
 
 .stickies {
-    background: yellow;
-    grid-area: stickies
+    /* background: yellow; */
+    grid-area: stickies;
+    text-align: center;
+    padding: 0 1em
+}
+
+.stickiesColumns {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+}
+.stickiesColumnsDefault,
+.stickiesColumnsFourL {
+    grid-template-columns: repeat(4, 1fr);
+}
+.stickiesColumnsStarfish {
+    grid-template-columns: repeat(5, 1fr);
+}
+.stickiesColumnsMSG {
+    grid-template-columns: repeat(3, 1fr);
+}
+.stickiesColumItem {
+    background: #ccc;
+}
+.sticky {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 1em
 }
 
 .header {
